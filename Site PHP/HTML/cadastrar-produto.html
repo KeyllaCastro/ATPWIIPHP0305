@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produto</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <div class="container-principal">
+        <div class="formulario">
+            <form id="form-cadastro" action="../php/cadastrar-produto.php" method="POST"></form>
+                <h3>Cadastro de Produto</h3>
+                
+                <input type="text" name="nome" placeholder="Nome do Produto:" required>
+                <input type="text" name="marca" placeholder="Marca:" required>
+                <input type="number" name="preco" placeholder="Preço (R$):" required>
+                <textarea name="descricao" placeholder="Descrição:" required rows="4"></textarea>
+                <input type="number" name="quantidade" placeholder="Estoque:" required>
+                <input 
+                    type="text" 
+                    name="categoria" 
+                    placeholder="Digite a categoria do produto (Ex: Perfumaria, Maquiagem, Alimentação e etc.)" 
+                    required
+                >
+                
+                <div class="checkbox-container">
+                    <label>
+                        <input type="checkbox" name="ativo" checked> Produto ativo
+                    </label>
+                </div>
+                
+                <input type="submit" value="Cadastrar">
+            </form>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
